@@ -1,0 +1,31 @@
+// backend/.sequelizerc
+
+const path = require('path');
+
+// Função para ler o argumento "--env" diretamente da linha de comando
+const getCliEnv = () => {
+    const envArgIndex = process.argv.indexOf('--env');
+    if (envArgIndex !== -1 && process.argv.length > envArgIndex + 1) {
+        return process.argv[envArgIndex + 1];
+    }
+    return 'autocart'; // Ambiente padrão se --env não for encontrado
+};
+
+const env = getCliEnv();
+
+// Mapeia o ambiente para o caminho base correspondente
+const envPathMap = {
+    autocart: 'databases/autocart',
+    mercadoA: 'databases/mercados',
+    mercadoB: 'databases/mercados'
+};
+
+// Determina o caminho base com base no ambiente
+const basePath = envPathMap[env] || envPathMap.autocart; // Fallback para autocart
+
+module.exports = {
+    'config': path.resolve('config', 'config.json'),
+    'models-path': path.resolve(basePath, 'models'),
+    'seeders-path': path.resolve(basePath, 'seeders'),
+    'migrations-path': path.resolve(basePath, 'migrations')
+};

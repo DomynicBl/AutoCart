@@ -1,0 +1,26 @@
+{
+  "autocart": {
+    "dialect": "sqlite",
+    "storage": "./databases/autocart/autocart_db.sqlite",
+    "dialectOptions": {
+      "dateStrings": true,
+      "typeCast": true
+    }
+  },
+  "mercadoA": {
+    "dialect": "sqlite",
+    "storage": "./databases/mercados/mercado_a.sqlite",
+    "dialectOptions": {
+      "dateStrings": true,
+      "typeCast": true
+    }
+  },
+  "mercadoB": {
+    "dialect": "sqlite",
+    "storage": "./databases/mercados/mercado_b.sqlite",
+    "dialectOptions": {
+      "dateStrings": true,
+      "typeCast": true
+    }
+  }
+}
