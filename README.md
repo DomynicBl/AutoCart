@@ -148,5 +148,5 @@ O servidor estará disponível em http://localhost:3333.
 
 - [Domynic Barros Lima](https://github.com/DomynicBl/)
 - [SobrJuan Pablo Ramos de Oliveira](https://github.com/Juanpablozim/)
-- [Luis Fernando Rodrigues Braga]()
+- [Luis Fernando Rodrigues Braga](https://github.com/Trinalsolid)
 - [Thiago Teixeira Oliveira]()
