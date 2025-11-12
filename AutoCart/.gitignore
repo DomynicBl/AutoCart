@@ -1,0 +1,53 @@
+# --- Geral ---
+
+# Arquivos de variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de Log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos gerados por Sistemas Operacionais
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Diretórios de configuração de IDEs e editores
+.idea/
+.vscode/
+
+
+# --- Backend (Node.js) ---
+
+# Pasta de dependências.
+/backend/node_modules/
+
+# Arquivos de banco de dados gerados.
+/backend/databases/**/*.sqlite
+
+
+# --- Frontend (React Native / Expo) ---
+# Preparado para quando o frontend for iniciado
+
+# Pasta de dependências do frontend
+/frontend/node_modules/
+
+# Arquivos específicos do Expo e React Native
+.expo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# --- Firmware (PlatformIO / Arduino) ---
+# Preparado para quando o firmware for iniciado
+
+# Arquivos de build e configuração de IDEs de embarcados
+/firmware/.pio/
+/firmware/.vscode/
+/firmware/firmware.bin
